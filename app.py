@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 dify_api_key = "sk-VhMO2jC4F1CrmwpO9cEk8E6s"
 
-url = "https://api.dify.ai/v1/chat-messages"
+url = "https://cloud.dify.ai/v1/chat-messages"
 
 st.title("Dify Streamlit App")
 if "conversation_id" not in st.session_state:
