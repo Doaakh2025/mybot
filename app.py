@@ -1,6 +1,6 @@
 import requests
 import streamlit as st
-dify_api_key = "VhMO2jC4F1CrmwpO9cEk8E6s"
+dify_api_key = "sk-VhMO2jC4F1CrmwpO9cEk8E6s"
 
 url = "https://api.dify.ai/v1/chat-messages"
 
@@ -27,7 +27,7 @@ if prompt:
         message_placeholder = st.empty()
 
         headers = {
-            'Authorization': 'Bearer VhMO2jC4F1CrmwpO9cEk8E6s',
+            'Authorization': 'Bearer sk-VhMO2jC4F1CrmwpO9cEk8E6s',
 
             'Content-Type': 'application/json'
         }
