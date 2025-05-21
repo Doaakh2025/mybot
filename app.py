@@ -2,7 +2,23 @@ import requests
 import streamlit as st
 dify_api_key = "app-0zVjkv5iC1neGpNPhNAQabS5"
 
-url = "https://api.dify.ai/v1"
+curl -X POST 'https://api.dify.ai/v1/chat-messages' \
+--header 'Authorization: Bearer {api_key}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {},
+    "query": "What are the specs of the iPhone 13 Pro Max?",
+    "response_mode": "streaming",
+    "conversation_id": "",
+    "user": "abc-123",
+    "files": [
+      {
+        "type": "image",
+        "transfer_method": "remote_url",
+        "url": "https://cloud.dify.ai/logo/logo-site.png"
+      }
+    ]
+}'
 
 st.title("Dify Streamlit App")
 if "conversation_id" not in st.session_state:
