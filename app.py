@@ -34,7 +34,8 @@ if prompt:
         message_placeholder = st.empty()
 
         headers = {
-            'Authorization': {app-VhMO2jC4F1CrmwpO9cEk8E6s}',
+            'Authorization': 'Bearer app-VhMO2jC4F1CrmwpO9cEk8E6s',
+
             'Content-Type': 'application/json'
         }
 
