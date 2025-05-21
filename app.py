@@ -1,8 +1,8 @@
 import requests
 import streamlit as st
-dify_api_key = "sk-VhMO2jC4F1CrmwpO9cEk8E6s"
+dify_api_key = "app-0zVjkv5iC1neGpNPhNAQabS5"
 
-url = "https://udify.app/chat/BXE7UHClh3Liaf7T"
+url = "https://api.dify.ai/v1"
 
 st.title("Dify Streamlit App")
 if "conversation_id" not in st.session_state:
