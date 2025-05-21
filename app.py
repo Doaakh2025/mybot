@@ -2,7 +2,7 @@ import requests
 import streamlit as st 
 
 dify_api_key = "MvMNfrvLnaD8mR9eKbP1Q4I1"
-url = "https://api.dify.ai/v1/chat-messages"
+url = "https://udify.app/chat/BXE7UHClh3Liaf7T"
 
 st.title("Dify Streamlit App")
 
