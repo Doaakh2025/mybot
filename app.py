@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 
 
-dify_api_key = "app-VhMO2jC4F1CrmwpO9cEk8E6s"
+dify_api_key "app-VhMO2jC4F1CrmwpO9cEk8E6s"
 
 
 url = "https://api.dify.ai/v1/chat-messages"
@@ -34,14 +34,14 @@ if prompt:
         message_placeholder = st.empty()
 
         headers = {
-            'Authorization': f'Bearer {app-VhMO2jC4F1CrmwpO9cEk8E6s}',
+            'Authorization': {app-VhMO2jC4F1CrmwpO9cEk8E6s}',
             'Content-Type': 'application/json'
         }
 
         payload = {
             "inputs": {},
             "query": prompt,
-            "response_mode": "blocking",  # أو "streaming" حسب التطبيق
+            "response_mode": "blocking",  # أو "streaming" 
             "conversation_id": st.session_state.conversation_id,
             "user": "test_user",
             "files": []
