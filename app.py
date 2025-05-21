@@ -1,15 +1,10 @@
 import requests
 import streamlit as st
-
-
-dify_api_key "app-VhMO2jC4F1CrmwpO9cEk8E6s"
-
+dify_api_key = "app-VhMO2jC4F1CrmwpO9cEk8E6s"
 
 url = "https://api.dify.ai/v1/chat-messages"
 
 st.title("Dify Streamlit App")
-
-
 if "conversation_id" not in st.session_state:
     st.session_state.conversation_id = ""
 
@@ -19,8 +14,6 @@ if "messages" not in st.session_state:
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
-
-
 prompt = st.chat_input("Enter your question")
 
 if prompt:
